@@ -1,0 +1,321 @@
+/* main color text #757575 */
+/* second color text #212121 */
+/* accent #2196F3 */
+/* white #FFFFFF */
+/* main color background #F5F5F5 */
+/* second color background F5F4FA */
+/* logo color heder #2196F3 and #000000 */
+/* logo color futer #2196F3 and #FFFFFF */
+
+/* ================== main seting ================== */
+:root {
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --main-bacground-color: #f5f5f5;
+  --white-color: #ffffff;
+  --filter-batton-color: #f5f4fa;
+  --black-color: #000000;
+  --hero-color: #2f303a;
+}
+body {
+  background-color: var(--white-color);
+  color: var(--main-text-color);
+
+  font-family: Roboto, sans-serif;
+}
+.list {
+  list-style: none;
+  padding-left: 0px;
+}
+.link {
+  text-decoration: none;
+}
+/* global style reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px 0px 0px 0px;
+}
+p {
+  margin: 0px 0px 0px 0px;
+}
+ul {
+  margin: 0px 0px 0px 0px;
+}
+/* ================== /main seting ================== */
+
+/* ================== logo ================== */
+.logo {
+  color: var(--accent-text-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+}
+.heder-secend-color {
+  color: var(--black-color);
+}
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.futer-secend-color {
+  color: var(--white-color);
+}
+/* ================== /logo ================== */
+
+/* ================== header ================== */
+/* site-nav */
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav li:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav a {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.site-nav .link {
+  color: var(--title-text-color);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
+/* contact-header */
+.header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(236, 236, 236);
+}
+.contact-header {
+  display: flex;
+  margin-left: auto;
+}
+.contact-header li:not(:last-child) {
+  margin-right: 50px;
+}
+.contact-header a {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.contact-header li:last-child{
+  margin-right: 0px;
+}
+.contact-header .link {
+  color: var(--main-text-color);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
+.contact-header .link:hover,
+.contact-header .link:focus {
+  color: var(--accent-text-color);
+}
+/* main-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+/* ================== /header ================== */
+/* ================== HERO ================== */
+.hero {
+  background-color: var(--hero-color);
+  text-align: center;
+}
+.hero-title {
+  color: var(--white-color);
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+}
+/* ================== HERO ================== */
+/* ================== FOOTER ================== */
+.footer {
+  background-color: var(--hero-color);
+}
+.contact-futer-location {
+  color: var(--white-color);
+  text-decoration: none;
+}
+.contact-futer-location:hover,
+.contact-futer-location:focus {
+  color: var(--accent-text-color);
+}
+.contact-futer {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.contact-futer:hover,
+.contact-futer:focus {
+  color: var(--accent-text-color);
+}
+/* ================== /FOOTER ================== */
+
+/* ================== BUTTON ================== */
+/* button "Замовити послугу" */
+.batton {
+  display: inline-block;
+  min-width: 216px;
+  min-height: 50;
+  color: var(--white-color);
+  background-color: var(--accent-text-color);
+  padding: 10px 32px 10px 32px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* filter buttons */
+.filter-buttons {
+  display: inline-block;
+  color: var(--title-text-color);
+  background-color: var(--filter-batton-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px 6px 22px;
+  min-height: 38;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+}
+.filter-buttons:hover,
+.filter-buttons:focus {
+  color: var(--white-color);
+  background: var(--accent-text-color);
+}
+.filter-buttons-container ul {
+  display: flex;
+  justify-content: center;
+}
+.filter-buttons-container li:not(:last-child) {
+ margin-right: 8px;
+}
+/* ================== /BUTTON ================== */
+
+/* ================== main ================== */
+/* Advantages */
+.advantages-titel {
+  color: var(--title-text-color);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.advantages-content {
+  color: var(--main-text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.42px;
+}
+/* sacteon */
+.saction {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 94px;
+}
+.saction-titel {
+  color: var(--title-text-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+/* Our team */
+.team-section {
+  margin-bottom: 0px;
+  background-color: var(--filter-batton-color);
+}
+.team-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+} 
+.team-name {
+  color: var(--title-text-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+}
+.team-profession {
+  color: var(--main-text-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+}
+/* main-studio */
+.main-studio ul {
+  display: flex;
+  justify-content: center;
+}
+.main-studio li:not(:last-child) {
+  margin-right: 30px;
+}
+.main-studio li {
+  background-color: var(--white-color);
+}
+/* Partpholyo */
+.partpholyo-titel {
+  color: var(--title-text-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.08px;
+}
+.partpholyo-product {
+  color: var(--main-text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+  letter-spacing: 0.48px;
+}
+.partpholyo-content {
+  color: var(--white-color);
+  background-color: var(--accent-text-color);
+}
+.partpholyo-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.partpholyo-list li {
+  margin-bottom: 30px;
+}
+.partpholyo-list li:not(:nth-child(3n + 3)) {
+  margin-right: 30px;
+}
+/* ================== /main ================== */
+/* ================== invisible ================== */
+.zolo {
+  display: block;
+  color: var(--white-color);
+  background-color: tomato;
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* ================== /invisible ================== */
